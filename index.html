@@ -7,6 +7,8 @@
   <style>
     body{
       font-family: sans-serif;
+      font-size: 16px;
+      background-color: grey;
     }
     a{
       padding-left: 18px;
@@ -31,12 +33,12 @@
       margin-bottom: 0;
     } */
     input{
-      padding: 10px 14px;
+      padding: 12px 18px;
       border-radius: 4px;
       font-weight: bold;
       border: none;
-      background-color: rgb(47, 42, 42);
-      color: white;
+      background-color: rgb(244, 237, 237);
+      color: black;
     }
     .special-image img{
      vertical-align: middle;
@@ -48,6 +50,32 @@
       cursor: pointer;
       text-decoration: underline;
       color: black;
+     }
+     h1, h3{
+      font-weight: bold;
+      text-align: center;
+     }
+     .intro p{
+      color: black;
+     }
+     .top{
+      background-image: url('./image/variety.avif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 300px;
+      margin-bottom: 20px;
+     }
+     .top h1, .top p, .top h3{
+      color: white;
+     }
+     .bottom{
+      text-align: center;
+    
+     }
+     .bottom img{
+      width: 18px;
+      height: 20px;
+      text-align: center;
      }
   </style>
 </head>
@@ -65,18 +93,20 @@
       <a href="order-form.html">Order Form</a>
     </nav>
   </header>
-  <section>
+  <section class="top">
     <h1>WELCOME TO PALATABLE KITCHEN</h1>
     <h3>Discover the best meal in town.</h3>
     <p>Step into a world of culinary delight where we bring you the finest flavors from around the globe. Our restaurant is your haven for unforgettable dining experiences. Whether you're here for a quick bite or a grand feast, we promise to make your visit memorable.</p>
+    <a href="image-gallery.html"><input type="button" value="Click for more"></a>
   </section>
   <div class="body-image">
-    
+    <h3>SIGNATURE DISHES</h3>
     <img src="./image/poundy.jpg" alt="Pounded yam and egusi soup" width="350px">
     <img src="./image/abula2.jpg" alt="amala and abula" width="350px" height="190px">
-    <img src="./image/jollof2.jpg" alt="amala and abula" width="350px" height="190px">
+    <img src="./image/jollof2.jpg" alt="amala and abula" width="350px" height="190px"><br>
+    
   </div>
-  <a href="image-gallery.html"><input type="button" value="Click for more"></a>
+ 
   <!-- <div>
     
     <iframe  width="420" height="345" src=""></iframe>
@@ -102,11 +132,21 @@
       "Palatable Kitchen is my go-to place for any special occasion. The food is incredible, the ambiance is perfect, and the
       staff make you feel right at home."
     </blockquote>
-    <p>- Jane Doe</p>
+    <p><b>- Jane Doe</b></p>
     <blockquote>
       "Palatable Kitchen is a very nice place for any special occasion. The food is nive, the taste is perfect, and the staff make you feel right at home."
     </blockquote>
-    <p>- Alli Chi</p>
+    <p><b>- Alli Chi</b></p>
   </section>
+  <hr>
+  <footer>
+    <div class="bottom">
+      <h3>Contact us</h3>
+      <p><b>Address:</b>No 39 Kaduna road, Kaduna</p>
+      <p><b>Phone No:</b>09802333444 or 08123400111</p>
+      <p><b>Email:</b>Palatablekitcken@gmail.com</p>
+      <p><b>Social Media:</b><img src="./image/icons/instagram.png" alt=""> <img src="./image/icons/linkdin.png" alt=""><img src="./image/icons/logos_facebook.png" alt=""><img src="./image/icons/mdi_youtube.jpg" alt=""><img src="./image/icons/pajamas_twitter.png" alt=""></p>
+    </div>
+  </footer>
 </body>
 </html>
