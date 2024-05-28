@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  
+    a {
+      padding-left: 18px;
+      text-decoration: none;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    a:hover{
+      cursor: pointer;
+      background-color: rgb(242, 141, 141);
+      color: black;
+      transition: transform 0.3s;}
+  
+    nav {
+      text-align: right;
+      margin-right: 50px;
+    }
+    table, th, td, tr{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .gallery-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+    .gallery-item img{
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="food-table.html">Food table</a>
+      <a href="videos.html">Videos</a>
+      <a href="image-gallery.html">Image Gallery</a>
+      <a href="order-form.html">Order Form</a>
+    </nav>
+  </header>
+  <section class="container">
+    <h2>Food Gallery</h2>
+    <p>Take a look at our mouth-watering dishes.</p>
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/abula2.jpg" alt="Abula and ewedu">
+          <div class="caption">Abula and ewedu</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/jollofrice.jpg" alt="Jollof rice and chicken">
+          <div class="caption">Jollof rice and chicken</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/barbecue.jpg" alt="Delicious Barbecue">
+          <div class="caption">Delicious Barbecue</div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/spaggy.jpg" alt="Delicious Spagetti sparara">
+          <div class="caption"> Delicious Spagetti sparara</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/friedrice.jpg" alt="Fried rice and chicken">
+          <div class="caption">Fried rice and chicken</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/black-soup.jpg" alt="Black soup">
+          <div class="caption">Black soup</div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/local-moi.jpg" alt="Local Moi Moi">
+          <div class="caption">Local Moi Moi</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/eba.jpg" alt="Eba and vegetable">
+          <div class="caption">Eba and vegetable</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/fish-plantain.jpg" alt="Fish and source">
+          <div class="caption">Fish and source</div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</body>
+</html>

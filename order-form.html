@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORDER FORM</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  
+    a {
+      padding-left: 18px;
+      text-decoration: none;
+      font-weight: 300;
+      cursor: pointer;
+    }
+    a:hover{
+      cursor: pointer;
+      background-color: rgb(242, 141, 141);
+      color: black;
+      transition: transform 0.3s;
+    }
+  
+    nav {
+      text-align: right;
+      margin-right: 50px;
+    }
+     input{
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-weight: bold;
+      border: 1px solid grey;
+      background-color: rgb(240, 237, 237);
+      color: white;
+    }
+    button{
+      padding: 10px 14px;
+       font-weight: bold;
+    }
+    select, option{
+      padding: 10px 14px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="food-table.html">Food table</a>
+      <a href="videos.html">Videos</a>
+      <a href="image-gallery.html">Image Gallery</a>
+      <a href="order-form.html">Order Form</a>
+    </nav>
+  </header>
+  <section id="order-form">
+    <h2>Order Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <br><br>
+      <label for="dish">Dish:</label>
+      <select id="dish" name="dish">
+        <option value="Amala and Abula">Amala and Abula</option>
+        <option value="Pounded yam and Egusi">Pounded yam and Egusi</option>
+        <option value="Fried rice">Fried rice</option>
+        <option value="Jollof rice">Jollof rice</option>
+        <option value="Fried plantain">Fried plantain and egg</option>
+      </select>
+      <br><br>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity">
+      <br><br>
+      <button type="submit">Order Now</button>
+    </form>
+  </section>
+</body>
+</html>
