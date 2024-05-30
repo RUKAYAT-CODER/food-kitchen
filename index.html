@@ -13,7 +13,7 @@
     a{
       padding-left: 18px;
       text-decoration: none;
-      font-weight: 300;
+      font-weight: 600;
        /* color: white; */
        cursor: pointer;
     }
@@ -33,7 +33,7 @@
       margin-bottom: 0;
     } */
     input{
-      padding: 12px 18px;
+      padding: 12px 24px;
       border-radius: 4px;
       font-weight: bold;
       border: none;
@@ -52,30 +52,69 @@
       color: black;
      }
      h1, h3{
-      font-weight: bold;
+      font-weight: 900;
+      text-align: center;
+      color: azure;
+      padding-top: 18px;
+     }
+     h2{
+      color: azure;
       text-align: center;
      }
      .intro p{
       color: black;
      }
      .top{
-      background-image: url('./image/variety.avif');
+      background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.5)),url('./image/variety.avif');
       background-size: cover;
       background-repeat: no-repeat;
-      height: 300px;
+      height: 350px;
       margin-bottom: 20px;
+      text-align: center;
+      /* background: rgba(0,150,19,0.1); */
      }
      .top h1, .top p, .top h3{
-      color: white;
+      color: rgb(214, 210, 210);
+     }
+     input{
+      color: aliceblue;
+      background-color: grey;
+     }
+     input:hover{
+      border: 1px solid grey;
+      color:  white;
+      cursor: pointer;
+      background-color: none;
      }
      .bottom{
       text-align: center;
-    
+     }
+     .top p{
+      line-height: 1.8;
+      text-align: center;
      }
      .bottom img{
       width: 18px;
       height: 20px;
       text-align: center;
+     }
+     .top-btn{
+      text-align: center;
+      color: white;
+     }
+     .body-image{
+      text-align: center;
+      padding-right: 20px;
+     }
+     .gallery-container{
+      display: flex;
+      justify-content: space-around;
+     }
+     .caption{
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: whitesmoke;
      }
   </style>
 </head>
@@ -96,21 +135,38 @@
   <section class="top">
     <h1>WELCOME TO PALATABLE KITCHEN</h1>
     <h3>Discover the best meal in town.</h3>
-    <p>Step into a world of culinary delight where we bring you the finest flavors from around the globe. Our restaurant is your haven for unforgettable dining experiences. Whether you're here for a quick bite or a grand feast, we promise to make your visit memorable.</p>
-    <a href="image-gallery.html"><input type="button" value="Click for more"></a>
+    <p>Step into a world of culinary delight where we bring you the finest flavors from around the globe. <br>Our restaurant is your haven for unforgettable dinning experiences. <br> Whether you're here for a quick bite or a grand feast, we promise to make your visit memorable.</p>
+    <a href="image-gallery.html" class="top-btn"><input type="button" value="Click for more"></a>
   </section>
   <div class="body-image">
     <h3>SIGNATURE DISHES</h3>
-    <img src="./image/poundy.jpg" alt="Pounded yam and egusi soup" width="350px">
-    <img src="./image/abula2.jpg" alt="amala and abula" width="350px" height="190px">
-    <img src="./image/jollof2.jpg" alt="amala and abula" width="350px" height="190px"><br>
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/poundy.jpg" alt="Pounded yam and egusi soup" width="350px">
+          <div class="caption">Pounded yam and Egusi soup</div>
+        </div>
+      </div>
+        <div class="gallery">
+          <div class="gallery-item">
+          <img src="./image/abula2.jpg" alt="amala and abula" width="350px" height="190px">
+            <div class="caption">Amala and Abula soup</div>
+          </div>
+        </div>
+          <div class="gallery">
+            <div class="gallery-item">
+              <img src="./image/jollof2.jpg" alt="Jollof rice" width="350px" height="190px">
+              <div class="caption">Jollof rice and chicken</div>
+            </div>
+          </div>
+    </div>      
     
-  </div>
+    
+    <br>
+    
  
-  <!-- <div>
-    
-    <iframe  width="420" height="345" src=""></iframe>
-  </div> -->
+  
+  </div>
   <section class="intro">
     <h2>Experience Culinary Excellence</h2>
     <p>At Palatable Kitchen, we take you on a gastronomic journey like no other. From the moment you step through our doors, you'll be immersed in an atmosphere of elegance and taste. Our chefs use only the freshest ingredients to craft dishes that are not only visually stunning but also tantalizing to the palate.</p>
@@ -119,9 +175,26 @@
   <section class="specials">
     <h2>Today's Specials</h2>
     <p>Indulge in our chef's special creations, made with the finest seasonal ingredients.</p>
-    <div class="special">
-      <img src="./image/download-abula.jpg" alt="Special Dish (Amala and abula)" width="350px" class="special-image">
-      <img src="./image/eba.jpg" alt="Special Dish (Eba and vegetable)" height="250px">
+   
+    <div class="gallery-container">
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/download-abula.jpg" alt="Special Dish (Amala and abula)" width="350px" height="190px">
+          <div class="caption">Amala and Abula</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/eba.jpg" alt="Special Dish (Eba and vegetable)" width="350px" height="190px">
+          <div class="caption">Eba and Vegetable soup</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="./image/fish-plantain.jpg" alt="Jollof rice" width="350px" height="190px">
+          <div class="caption">Plantain and Fish source</div>
+        </div>
+      </div>  
     </div>
     
   </section>
@@ -132,11 +205,16 @@
       "Palatable Kitchen is my go-to place for any special occasion. The food is incredible, the ambiance is perfect, and the
       staff make you feel right at home."
     </blockquote>
-    <p><b>- Jane Doe</b></p>
+    <p><b>- Bankole Jane Doe</b></p>
     <blockquote>
       "Palatable Kitchen is a very nice place for any special occasion. The food is nive, the taste is perfect, and the staff make you feel right at home."
     </blockquote>
     <p><b>- Alli Chi</b></p>
+    <blockquote>
+      "Palatable Kitchen is a place like home. The food is nive, the taste is perfect, and the
+      staff make you feel right at home. Try Palatable kitchen and you will never regret you did"
+    </blockquote>
+    <p><b>- Danladi mai Kifii</b></p>
   </section>
   <hr>
   <footer>

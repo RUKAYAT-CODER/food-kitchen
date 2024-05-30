@@ -10,10 +10,11 @@
     }
   
     a {
-      padding-left: 18px;
+      padding-left: 10px;
       text-decoration: none;
-      font-weight: 300;
+      font-weight: 600;
       cursor: pointer;
+      
     }
     a:hover{
       cursor: pointer;
@@ -23,11 +24,14 @@
   
     nav {
       text-align: right;
-      margin-right: 50px;
+      margin-right: 30px;
+      display: flex;
+      justify-content: space-around;
     }
     table, th, td, tr{
       border: 1px solid black;
       border-collapse: collapse;
+      
     }
     .bottom{
       text-align: center;
@@ -38,6 +42,16 @@
       height: 20px;
       text-align: center;
      }
+     h1{
+      font-weight: 700;
+      text-align: center;
+      color: gray;
+      font-size: 50px;
+     }
+     table{
+      margin: 0 auto;
+     }
+
   </style>
 </head>
 <body>
@@ -52,8 +66,8 @@
     </nav>
   </header>
   <section id="food-table">
-    <h2>Our Menu</h2>
-    <table>
+    <h1>Our Menu</h1>
+    <table >
       <thead>
         <tr>
           <th>Dish</th>
@@ -91,6 +105,11 @@
           <td>Fried Plantain and source </td>
           <td>Fresh, tasty and delicious</td>
           <td>N1,800</td>
+        </tr>
+        <tr>
+          <td>Fish source and plantain </td>
+          <td>Fresh, tasty and delicious</td>
+          <td>N2,800</td>
         </tr>
       </tbody>
     </table>

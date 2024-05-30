@@ -12,7 +12,7 @@
     a {
       padding-left: 18px;
       text-decoration: none;
-      font-weight: 300;
+      font-weight: 600;
       cursor: pointer;
     }
     a:hover{
@@ -25,17 +25,29 @@
       text-align: right;
       margin-right: 50px;
     }
+    h1{
+      font-weight: 700;
+      text-align:center ;
+      color: gray;
+      font-size: 50PX;
+    }
      input{
       padding: 10px 14px;
       border-radius: 4px;
       font-weight: bold;
       border: 1px solid grey;
-      background-color: rgb(240, 237, 237);
-      color: white;
+      background-color: white;
+      color: black;
+    }
+    h1{
+      color: gray;
     }
     button{
       padding: 10px 14px;
        font-weight: bold;
+       border-radius: 4px;
+       outline: none;
+       border: none;
     }
     select, option{
       padding: 10px 14px;
@@ -51,6 +63,17 @@
       height: 20px;
       text-align: center;
      }
+     #order-form{
+      text-align: center;
+      border: 1px solid grey;
+      width: 600px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      margin-top: 20px;
+     }
+     button{
+      font-size: 16px;
+     }
   </style>
 </head>
 <body>
@@ -65,7 +88,7 @@
     </nav>
   </header>
   <section id="order-form">
-    <h2>Order Form</h2>
+    <h1>Order Form</h1>
     <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name">
@@ -83,12 +106,14 @@
       </select>
       <br><br>
       <label for="quantity">Quantity:</label>
-      <input type="number" id="quantity" name="quantity">
+      <input type="number" id="quantity" name="quantity"><br><br>
+      <label for="">Amount</label>
+      <input type="text">
       <br><br>
       <button type="submit">Order Now</button>
     </form>
   </section>
-  <hr>
+  
   <footer>
     <div class="bottom">
       <h3>Contact us</h3>
